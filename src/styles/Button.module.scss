@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+.button {
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: $button-text;
+  background: $button-bg;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background: $button-hover-bg;
+    border: none;
+  }
+
+  &.equals {
+    background: $equals-button-bg;
+    &:hover {
+      background: $equals-button-hover-bg;
+    }
+  }
+
+  &.special {
+    background: $special-button-bg;
+    &:hover {
+      background: $special-button-hover-bg;
+    }
+  }
+}
